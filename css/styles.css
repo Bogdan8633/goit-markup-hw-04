@@ -121,13 +121,24 @@ padding-right: 15px;
 }
 
 /* backblack */
-.backblack {
+.section.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #2F303A;
     text-align: center;
-}
-.section.backblack {
     padding-top: 200px;
     padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-hero-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* hero */
@@ -302,7 +313,8 @@ background-color: var(--backgound-gray-color);
 .dark {
     background-color: #2F303A;
     padding-top: 60px;
-    padding-bottom: 60px;}
+    padding-bottom: 60px;
+}
 
 .logo-footer {
     display: block;
@@ -316,6 +328,7 @@ background-color: var(--backgound-gray-color);
     text-decoration: none;
     letter-spacing: 0.03;
 }
+
 .contacts-footer {
     display: block;
     margin-top: 0;
@@ -341,7 +354,7 @@ background-color: var(--backgound-gray-color);
     font-weight: var(--normal-font);
     font-size: var(--primary-font-size);
     line-height: 1.71;
-    
+
     letter-spacing: 0.03em;
     text-decoration: none;
 }
@@ -350,16 +363,28 @@ background-color: var(--backgound-gray-color);
 .find-us:focus {
     color: var(--accent-color)
 }
+
 .mail-tel:hover,
 .mail-tel:focus {
     color: var(--accent-color)
+}
+
+.join-text {
+    font-family: var(--primery-font);
+    font-weight: var(--bolt-font);
+    font-size: var(--primary-font-size);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 
 /*===============Cтраничка Портфолио===============*/
 
 .current {
-    color: var(--accent-color);}
+    color: var(--accent-color);
+}
 
 .filter {
     display: flex;
@@ -375,7 +400,7 @@ background-color: var(--backgound-gray-color);
 .filter-button {
     padding: 6px 22px;
     border-radius: 4px;
-    
+
     color: var(--primery-color);
     background-color: var(--backgound-gray-color);
     font-family: var(--primery-font);
@@ -415,8 +440,8 @@ background-color: var(--backgound-gray-color);
     margin-left: -30px;
 }
 
-.card-set > .item {
-    flex-basis:calc(100% / 3 - 30px);
+.card-set>.item {
+    flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
 }
@@ -442,7 +467,5 @@ background-color: var(--backgound-gray-color);
     font-size: var(--secondary-font-size);
     line-height: 1.88;
     letter-spacing: 0.03em;
-    
-}
 
- 
+}
