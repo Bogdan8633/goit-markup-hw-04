@@ -87,8 +87,20 @@ margin-right: 50px;
 
 .connection {
     display: flex;
+    align-items: baseline;
     margin-left: auto;
 }
+
+.contact-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contact-icon:hover,
+.contact-icon:focus {
+    fill: currentColor;
+}
+
 .connection .connection-link + .connection-link {
     margin-left: 50px;
 }
@@ -112,7 +124,6 @@ width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 
-/* outline: 2px solid tomato; */
 }
 
 .main-nav {
@@ -181,6 +192,7 @@ cursor: pointer;
 text-align: center;
 
 }
+
 .contained:hover,
 .contained:focus {background-color: var(--accent-color-hover);}
 
