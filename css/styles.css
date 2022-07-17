@@ -5,6 +5,8 @@
     --accent-color-hover: #188CE8;
     --light-color: #FFFFFF;
     --backgound-gray-color: #F5F4FA;
+    --link-client-color: #AFB1B8;
+    --image-border: 1px solid #EEEEEE;
     --primery-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
     --normal-font: 400;
@@ -13,9 +15,9 @@
     --bolder-font: 900;
     --primary-font-size: 14px;
     --secondary-font-size: 16px;
-    --image-border: 1px solid #EEEEEE;
 }
 
+/* ==============Общие стили и сброс============== */
 body {
     background-color: var(--light-color);
     font-size: var(--primary-font-size);
@@ -28,7 +30,30 @@ img {
     max-width: 100%;
 }
 
-/* header */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.no-markers {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-link.current {
+    color: var(--accent-color);
+}
+
+/* ==============/Общие стили и сброс============== */
+
+
+
+/* =====================header===================== */
+
 .content {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -49,7 +74,7 @@ img {
 }
 
 .menu-list .menu-item:not(:last-child) {
-margin-right: 50px;    
+    margin-right: 50px;    
 }
 
 .logo {
@@ -65,12 +90,6 @@ margin-right: 50px;
 
 .accent {
     color: var(--accent-color);
-}
-
-.no-markers {
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .menu-link {
@@ -119,14 +138,11 @@ margin-right: 50px;
     color: var(--accent-color);
 }
 
-.container {
-margin-left: auto;
-margin-right: auto;
-width: 1200px;
-padding-left: 15px;
-padding-right: 15px;
+/* =====================/header===================== */
 
-}
+
+
+/* ==================hero (overlay)================= */
 
 .main-nav {
     display: flex;
@@ -154,8 +170,6 @@ padding-right: 15px;
     background-position: center;
 }
 
-/* hero */
-
 .hero-title {
     width: 696px;
     margin-left: auto;
@@ -177,29 +191,35 @@ padding-right: 15px;
     border: 1px solid transparent;
 }
 .contained {
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-padding: 10px 32px;
-margin-left: auto;
-margin-right: auto;
-min-width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
 
-color: var(--light-color);
-background-color: var(--accent-color);
-font-weight: var(--bolt-font);
-font-size: var(--secondary-font-size);
-line-height: 1.88;
-letter-spacing: 0.06em;
-cursor: pointer;
-text-align: center;
-
+    color: var(--light-color);
+    background-color: var(--accent-color);
+    font-weight: var(--bolt-font);
+    font-size: var(--secondary-font-size);
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    text-align: center;
 }
 
 .contained:hover,
-.contained:focus {background-color: var(--accent-color-hover);}
+.contained:focus {
+    background-color: var(--accent-color-hover);
+}
 
-/* benefits */
-.visually-hidden {position: absolute;
+/* ==================/hero (overlay)================= */
+
+
+
+/* ====================benefits=======================*/
+.visually-hidden {
+    position: absolute;
     white-space: nowrap;
     width: 1px;
     height: 1px;
@@ -212,42 +232,18 @@ text-align: center;
     /* Cкрытый элемент */
 }
 
-
-
-
-.benefits-item::before {
-    display: block;
-    content: "";
-    height: 120px;
-    background-color: var(--backgound-gray-color);
-    border-radius: 4px;
-    margin-bottom: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .benefits-content {
     display: flex;
-    
 }
 
-.benefits-content .benefits-item {
+.benefits-icon-container {
+    padding: 25px 102px;
     width: 270px;
-}
-
-.benefits-content .benefits-item:not(:last-child) {
+    height: 120px;
+    background-color: var(--backgound-gray-color);
     margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .achivements {
@@ -270,9 +266,14 @@ text-align: center;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-/* products */
+
+/* ====================/benefits=======================*/
+
+
+
+/* =====================products=======================*/
 .section.services {
-padding-top: 0;
+    padding-top: 0;
 }
 
 .head-title {
@@ -294,10 +295,13 @@ padding-top: 0;
     margin-right: 30px;
 }
 
+/* =====================/products=======================*/
 
-/* team */
+
+
+/* ========================team=========================*/
 .gray-background {
-background-color: var(--backgound-gray-color);
+    background-color: var(--backgound-gray-color);
 }
 
 .section {
@@ -348,7 +352,46 @@ background-color: var(--backgound-gray-color);
     letter-spacing: 0.03em;
 }
 
-/* footer */
+/* ========================/team=========================*/
+
+
+
+/* =======================clients=========================*/
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.client {
+
+}
+
+.client-link {
+   color: var(--link-client-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+    color: var(--accent-color);
+}
+
+.client:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-icon {
+    fill: currentColor;
+}
+
+/* =======================/clients=========================*/
+
+
+
+/* =======================footer=========================*/
+
 .dark {
     background-color: #2F303A;
     padding-top: 60px;
@@ -449,19 +492,18 @@ background-color: var(--backgound-gray-color);
 
 .link:hover,
 .link:focus {
-  background-color: var(--accent-color) ;  
+    background-color: var(--accent-color) ;  
 }
 
 .join-social-links:not(:last-child) {
     margin-right: 10px;
 }
 
+/* =======================footer=========================*/
 
-/*===============Cтраничка Портфолио===============*/
 
-.current {
-    color: var(--accent-color);
-}
+
+/*====================СТРАНИЧКА PORTFOLIO================*/
 
 .filter {
     display: flex;
@@ -473,7 +515,8 @@ background-color: var(--backgound-gray-color);
     margin-right: 8px;
 }
 
-/*кнопки-фильтры*/
+
+/*====================кнопки-фильтры====================*/
 .filter-button {
     padding: 6px 22px;
     border-radius: 4px;
@@ -494,6 +537,12 @@ background-color: var(--backgound-gray-color);
     color: var(--light-color);
     background-color: var(--accent-color);
 }
+
+/*====================/кнопки-фильтры====================*/
+
+
+
+/*========================card-set=======================*/
 
 .project-image {
     margin-top: 0;
@@ -544,5 +593,6 @@ background-color: var(--backgound-gray-color);
     font-size: var(--secondary-font-size);
     line-height: 1.88;
     letter-spacing: 0.03em;
-
 }
+
+/*========================/card-set=======================*/
