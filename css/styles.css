@@ -535,33 +535,38 @@ img {
     color: #FFFFFF;
 
     margin-top: 0;
-    margin-bottom: 20px;
-   
+    margin-bottom: 20px;  
 }
 
-.social-links.no-markers {
+.social-links {
     display: flex;
-    align-items: center;
-    margin-right: 0;
+    gap: 10px;
 }
 
-.link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.join-social-links {
     width: 44px;
     height: 44px;
+}
+
+.social-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--light-color);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
 
-.link:hover,
-.link:focus {
-    background-color: var(--accent-color) ;  
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color: var(--accent-color)
 }
 
-.join-social-links:not(:last-child) {
-    margin-right: 10px;
+.social-link-icon {
+    fill: currentColor
 }
 
 /* =======================footer=========================*/
