@@ -370,16 +370,26 @@ img {
 }
 
 .client {
-
+    display: flex;
+    width: 170px;
+    height: 92px;
 }
 
 .client-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    color: var(--link-client-color);
+   width: 100%;
+   height: 100%;
+   border: 1px solid currentColor;
+   border-radius: 4px;
 }
 
 .client-link:hover,
 .client-link:focus {
     color: var(--accent-color);
+    border-color: currentColor;
 }
 
 .client:not(:last-child) {
