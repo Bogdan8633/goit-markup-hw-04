@@ -374,11 +374,6 @@ img {
     border-radius: 50%;
 }
 
-.card-social-link:hover,
-.card-social-link:focus {
-    background-color: var(--accent-color);
-}
-
 .personal-social-links {
     display: flex;
     justify-content: center;
@@ -392,17 +387,13 @@ img {
 .personal-social-links:hover,
 .personal-social-links:focus {
     color: var(--light-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
 }
 
 .personal-social-link-icon {
     fill: currentColor;
 }
-
-.personal-social-link-icon:hover,
-.personal-social-link-icon:focus {
-    fill: currentColor;
-}
-
 
 /* ========================/team=========================*/
 
