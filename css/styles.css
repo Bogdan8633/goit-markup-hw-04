@@ -640,7 +640,6 @@ img {
     display: block;
     text-decoration: none;
     color: var(--primery-color);
-    cursor: pointer;
 }
 
 .card-set-link:hover,
